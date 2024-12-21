@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial,poping;
+    list-style: none;
+    /*! color: red; */
+}
+/****TOAST ******************************************/
+.toast {
+    position: absolute;
+    z-index: -1;
+    width: max-content; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #ff000075;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: white;
+   animation: show 2s linear forwards ;   
+   
+} 
+ 
+.toast-ok {
+    background-color: #00ff1075;
+    
+}
+
+@keyframes show {
+   100% {   
+        visibility: hidden;  
+       z-index: 22;
+       
+    }
+}
+
+body {
+    background-image: linear-gradient(45deg,red,black,white);
+    
+}
+
+
+/**********************************************/
+
+  .my-nav {
+    background-color: #599c5a38;
+    padding: 5px 10px;
+    text-align: center;
+      z-index: 1;
+}
+.container { 
+    height:calc( 100vh - 100px);
+    width: 100%;
+    background-color: #ccc8bf00; 
+    margin: 0; 
+    z-index: 1; 
+}
+
+.container .my-nav h1{
+    color: white;
+    padding: 5px;
+}
+
+.container form.add {
+    display: flex;
+    flex-direction: column; 
+    width: 60%;
+    margin: 10px auto;
+    background-color: #436452;
+    padding: 14px;
+    border-radius: 3px;
+    box-shadow: -4px 4px 8px 1px black; 
+}
+
+.container form input  {
+    padding: 10px 8px;
+    margin-bottom: 10px;
+}
+
+
+.container form button {
+    padding:6px 10px ; 
+    width: max-content;
+    margin: 0px auto;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container table {
+    width: 80%;
+    text-align: center;
+    margin: 50px auto 0;
+   border-spacing: 5px;
+}
+
+
+.container table th{
+    background-color: red; 
+    font-size: 20px;
+    padding:  10px;
+}
+
+
+.container table td{
+    margin: 10px;
+    background-color: #8d9293;
+    
+    padding: 6px;
+}
+
+.container table tr td:first-child > span{
+    background-color: yellow ;
+    border-radius: 50%  ;
+    padding: 7px;
+}
+ 
+.container table tr:nth-child(2n + 1) td  {  
+    background-color: #adb3b4 ;
+    
+}
+
+
+.container table tr .edit-btn input {
+    padding: 3px 10px;
+}
+
+.container table form {
+    width: 100%;
+    height:  100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    input {
+        margin: 3px 10px;
+    }
+}
+
+/*****Edite Form **********************************************/
+.contaner-P2 {
+    background-color: #5b56568a;
+    height: 100vh; 
+    width: 100%;
+    padding: 20px;
+}
+
+.contaner-P2  form{
+    
+    margin: 20px auto;
+    background-color: #de8468b8;
+    background-image: linear-gradient(45deg,red,black,white);
+    display: flex;
+    flex-direction:column;
+    padding: 20px;  
+    width: 400px;
+    gap: 30px; 
+    border-radius: 5px;
+}
+ 
+
+.contaner-P2  form label input{
+    width:calc( 100% - 65px);
+    padding: 5px  10px;
+}
+
+.contaner-P2  form > input{
+    width: 50%;
+    margin: 2px auto;
+    padding: 10px 5px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
